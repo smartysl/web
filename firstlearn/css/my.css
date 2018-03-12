@@ -1,0 +1,61 @@
+
+.header li{
+	float: right;
+	height: 30px;
+	width: 60px;
+}
+.header a:link{
+	font-size: 80%;
+	color: black;
+}
+.main{
+	height: 600px;
+	width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.myinput{
+	height: 30px;
+	width: 530px;
+}
+.baidu{
+    padding: 50px 600px 30px;
+	height: 150px;
+	width: 300px;
+	display: table-cell;
+}
+.footer{
+	margin: 0 auto;
+	text-align: center;
+}
+.QR{
+	padding: 0px 100px 10px 50px;
+}
+.button{
+	color: white;
+	background: #2d78f4;
+	border: none;
+	font-size: 15px;
+	border-radius: 6px;
+	padding: 10px 10px;
+}
+.foot1 li{
+	padding: 0px 10px;
+	float: left;
+}
+.foot1{
+	padding:0px 580px;
+	font-size: 75%;
+}
+.foot2 {
+	clear: left;
+	padding: 0px 480px;
+	font-size: 75%;
+}
+.foot2 li{
+	padding: 0px 10px;
+	float: left;
+}
+.footer a:link{
+	color: gray;
+}
