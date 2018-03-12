@@ -1,10 +1,15 @@
+
 .top img{
 	width: 1100px;
 	height: 100px;
 }
+.top ul{
+	height: 20px;
+	padding: 0px;
+}
 .top li{
 	width: 150px;
-	float: left;
+	display: inline-block;
 	font-size: 75%;
 	height: 20px;
 }
@@ -12,12 +17,25 @@
 	color: black;
 	text-decoration: none;
 }
-.left{
+.top{
+	background-color: gray;
+	width: 1100px;
+	height: 160px;
+}
+.main{
 	clear: left;
+	margin: 0 auto;
+	height: 1200px;
+}
+.left{
+	float: left;
+	height: 800px;
 	width: 200px;
 	text-align: center;
 	font-size: 75%;
 	background-color: gray;
+	padding: 0px;
+	
 }
 .left img{
 	height: 150px;
@@ -26,34 +44,30 @@
 }
 
 .footer{
-    position: fixed;
-    bottom: 0;
-    clear: left;
-    padding: 0px 450px;
+    clear: both;
     background-color: #B8B8B8;
     font-size: 75%;
     height: 32px;
-    width: 210px;
+    width: 1100px;
+    text-align: center;
 }
 .right{
 	font-size: 100%;
 	float: right;
-	padding: 0px;
-	height: 578px;
-	width: 908px;
-	position: absolute;
-	top: 148px;
-	right: 420px;
+	margin: 0px 403px 0px 0px;
+	height: 800px;
+	width: 900px;
 	background-color: #909090;
 }
 .right pre{
 	float: left;
 }
 .right img{
-	height: 250px;
-    width: 250px;
-    position: absolute;
-    top: 300px;
-    right: 200px;
-    
+	float: right;
 }
+.right a{
+	color: black;
+	text-decoration: none;
+}
+
+
