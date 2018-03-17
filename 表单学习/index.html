@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单学习</title>
+		<link rel="stylesheet" type="text/css" href="css/biaodan.css" />
+	</head>
+	<body>
+		<form class="form-wrapper" action="#" method="post">
+			<div class="form-intro">
+				<h1>Oscar Redemption</h1>
+			    <h2>Here's your chance to set the record straight: tell us what year the wrong film got nominated, and which film <b>should</b> have received a nod...</h2>
+			</div>
+			<fieldset class="form-about-wrapper">
+				<legend>About the offending film (part 1 of 3)</legend>
+				<div class="form-input-wrapper">
+					<input id="film" name="film" type="text" placeholder="e.g. kingkong" required />
+					<label for="film">The film in question?</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<input id="yearofcrime" name="yearofcrime" type="number" min="1929" max="2018" required />
+					<label for="yearsofcrime">Year of crime</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<input id="awardwon" name="awardwon" type="text" list="awards" placeholder="e.g. Best Picture" />
+					<datalist id="awards">
+						<select>
+							<option label="Best Picture" value="Best Picture"></option>
+						    <option label="Best Director" value="Best Director"></option>
+						    <option label="Best Adapted Screenplay" value="Best Adapted Screenplay"></option>
+						    <option label="Best Original Screenplay" value="Best Original Screenplay"></option>
+						</select>
+					</datalist>
+					<label for="awardwon">Award Won</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<textarea id="whyitswrong" name="whyitswrong" placeholder="emmm。。。" required></textarea>
+					<label for="whyitswrong">Tell us why that's wrong</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<span class="form-slider-wrapper">
+						<input id="howyourateit" name="howyourateit" type="range" value="5" min="1" max="10" onchange="showvalue(this.value)" required />
+						<span id="range">5</span>
+					</span>
+					<label for="howyourateit">How you rate it (1 is woeful, 10 is great)</label>
+				</div>
+				<div class="clear"></div>
+				<script>
+					function showvalue(newvalue){
+						document.getElementById("range").innerHTML=newvalue;
+					}
+				</script>
+			</fieldset>
+			<fieldset class="form-what-wrapper">
+				<legend>What should have won? (part 2 of 3)</legend>
+					<div class="form-input-wrapper">
+						<input id="filmgood" name="filmgood" type="text" placeholder="e.g. The Cable Guy" required/>
+						<label for="filmgood">The film that should have won</label>
+					</div>
+					<div class="clear"></div>
+					<div class="form-input-wrapper">
+						<textarea id="whyitsshould" name="whyitsshould" placeholder="Hello" required></textarea>
+						<label for="whyitsshould">Tell us why it should won</label>
+					</div>
+					<div class="clear"></div>
+			</fieldset>
+			<fieldset class="form-about-you">
+				<legend>About you? (part 3 of 3)</legend>
+				<div class="form-input-wrapper">
+					<input id="yourname" name="yourname" type="text" placeholder="yu shilin" required />
+					<label for="yourname">Your Name</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<input id="favortie-colour" type="color" />
+					<label for="favorite-colour">Your Favorite Colour</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<input id="yourdate" type="date" required />
+					<label for="yourdate">Date/Time</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<input id="tel" name="tel" type="tel" placeholder="188-4681-0840" required />
+					<label for="tel">Telephone (so we can berate you if you're wrong)</label>
+				</div>
+				<div class="clear"></div>
+				<div class="form-input-wrapper">
+					<input id="email" name="email" type="email" placeholder="1632892359@qq.com" required />
+					<label for="email">Email</label>
+				</div>
+	            <div class="clear"></div>		
+			</fieldset>
+			<button type="submit" value="Submit Redmption">Submit</button>
+		</form>
+	</body>
+</html>
