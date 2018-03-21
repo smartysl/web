@@ -1,0 +1,35 @@
+
+.mid p{
+	clear: right;
+}
+
+.header {
+	text-align: center;
+}
+.img2{
+	height: 200px;
+	width: 300px;
+}
+@media only screen and (min-width:700px ) {
+	.mid{
+		height: 300px;
+		width: 800px;
+	}
+	.mid img{
+		float: right;
+	}
+	.ingredients{
+		float: right;
+		border: 1px solid red;
+		background-color: gray;
+	}
+	.mid h2{
+	display: inline-block;
+	width: 500px;}
+	body{
+	height: 1000px;
+	width: 800px;
+	margin: 0 auto;
+	}
+	
+}
